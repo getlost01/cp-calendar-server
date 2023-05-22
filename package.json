@@ -1,0 +1,28 @@
+{
+  "name": "cp-calendar-server",
+  "version": "1.0.0",
+  "description": "\"This is the sever side of cp calendar\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getlost01/cp-calendar-server.git"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "request": "^2.88.2"
+  },
+  "author": "\"Aagam Jain\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/getlost01/cp-calendar-server/issues"
+  },
+  "homepage": "https://github.com/getlost01/cp-calendar-server#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
