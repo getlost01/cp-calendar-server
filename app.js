@@ -25,7 +25,7 @@ app.get('/upcomingContests', (req, res, next) => {
       { url: `${clistUrl}&resource=${q.resource}&end__gt=${q.end__gt}&start__gt=${q.start__gt}&limit=150` },
       (error, response, body) => {
         if (error || response.statusCode !== 200) {
-          return res.status(500).json({ type: 'error', message: error, url: `${clistUrl}&resource=${q.resource}&end__gt=${q.end__gt}&start__gt=${q.start__gt}&limit=150`});
+          return res.status(500).json({ type: 'error', message: error, query: `resource=${q.resource}&end__gt=${q.end__gt}&start__gt=${q.start__gt}&limit=150`});
         }
         res.json(JSON.parse(body));
       }
